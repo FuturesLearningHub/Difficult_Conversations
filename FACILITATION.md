@@ -34,9 +34,9 @@ python3 tools/build-facilitator.py
 | Feedback Lab | 8 | 6 |
 | 04 Opening with STATE | 8 | 4 |
 | 05 Trust & BRAVING | 8 | 4 |
-| 06 Radical Candor | 9 | 6 |
+| 06 Radical Candor | 8 | 5 |
 | 07 The first 30 seconds | 6 | 4 |
-| 08 When it goes sideways | 5 | 3 |
+| 08 Sideways & listening | 6 | 4 |
 | Recap quiz | 4 | 4 |
 | My conversation plan (capstone) | 8 | 7 |
 | Glossary | 1 | — |
@@ -52,6 +52,11 @@ follow-ups. Per-section cuts live in each `coreNote`.
 talkative rooms. Protect the last 15 minutes (recap, capstone, commitment)
 by cutting group debriefs first, never the capstone.
 
+**Pre-work and follow-up:** send the pre-work invite with the calendar
+invite and the 7-day pulse a week after; both templates live on the
+facilitator briefing slide. The printable capstone worksheet
+(`worksheet.html`) is the no-device and projector-failure fallback.
+
 **Privacy norms (load-bearing):** roles, never names, in every example; the
 avoidance meter, BRAVING scorecard, and conversation plan are private and
 never collected. If a disclosure involves policy violations, harassment, or
@@ -61,9 +66,11 @@ safety, route to HR — that's in the contingency table.
 
 - **In the moment:** inline quick checks (01, 03, 04, 07, 08), the labeler
   score (02), Lab outcome tier (Lab), quadrant-sort score (06), BRAVING
-  completion (05), and the out-loud STATE rep verdicts (04).
+  completion (05), the out-loud STATE rep verdicts (04), and the
+  listen-only drill staying inside paraphrase-plus-question (08).
 - **End of session:** the 6-question scored recap maps 1:1 to the learning
-  objectives; the capstone plan and the commitment round are the transfer
+  objectives (Level 2); the closing fist-to-five is the Level 1 reaction
+  check; the capstone plan and the commitment round are the transfer
   artifacts.
 - **After:** the 7-day pulse ("Did you have the conversation? Which tool?
   What happened?") is the Kirkpatrick Level 3 evidence; 30/60/90-day check

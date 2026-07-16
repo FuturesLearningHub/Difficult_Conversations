@@ -95,6 +95,8 @@ for label, key in (("A week before","weekBefore"),("The day before","dayBefore")
 mats = ''.join(f'<li>{esc2(x)}</li>' for x in meta['materials'])
 cont = ''.join(f'<div class="brief__row"><b>If {esc2(c["if"]).rstrip(".")}:</b> {esc2(c["then"])}</div>' for c in meta['contingencies'])
 tough = ''.join(f'<details class="brief__q"><summary>{esc2(t["q"])}</summary><p>{esc2(t["a"])}</p></details>' for t in meta['toughQuestions'])
+tmpl = ''.join(f'<details class="brief__q"><summary>{esc2(t["title"])}</summary><p>{esc2(t["body"])}</p></details>' for t in meta.get('templates', []))
+tmpl_box = f'<div class="brief__box brief__wide"><h3>Copy-paste templates</h3>{tmpl}</div>' if tmpl else ''
 briefing = f"""  <section class="slide on-dark" id="s-briefing" data-title="Facilitator briefing">
     <div class="wrap wrap-wide">
       <p class="eyebrow">Facilitator briefing · Read before you teach</p>
@@ -104,6 +106,7 @@ briefing = f"""  <section class="slide on-dark" id="s-briefing" data-title="Faci
         <div class="brief__box"><h3>Materials</h3><ul>{mats}</ul></div>
         <div class="brief__box brief__wide"><h3>When things go sideways</h3>{cont}</div>
         <div class="brief__box brief__wide"><h3>Tough questions, ready answers</h3>{tough}</div>
+        {tmpl_box}
       </div>
       <p class="why" style="margin-top:1.5rem"><b>After the session:</b> {esc2(meta['postSession'])}</p>
     </div>

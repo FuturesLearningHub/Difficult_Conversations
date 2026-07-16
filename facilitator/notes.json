@@ -21,6 +21,7 @@
       "Facilitator laptop with arrow keys or clicker; all notifications off",
       "Learner devices (BYOD) joining via the welcome-slide QR",
       "A few printed cheat sheets (cheatsheet.html) for anyone without a device",
+      "Printed capstone worksheets (worksheet.html) for anyone without a device, and as the projector-failure fallback",
       "Whiteboard or flip chart for the parking lot and the room's quadrant vote",
       "Sticky notes and pens: the private-notes fallback, and several exercises here are deliberately private"
     ],
@@ -30,7 +31,8 @@
         "Build your own conversation plan in the capstone using a real conversation you're avoiding. You will reference having done it, not the contents.",
         "Book a room where pairs can talk without shouting, and confirm guest wifi works for personal devices.",
         "Decide your path now: Full (90-minute slot) or Core (60). Mark which group debriefs you keep.",
-        "Rehearse three scripted moments out loud: the Section 01 avoidance framing, the STATE opener read-aloud, and the contrast-statement demo in Section 08."
+        "Rehearse three scripted moments out loud: the Section 01 avoidance framing, the STATE opener read-aloud, and the contrast-statement demo in Section 08.",
+        "Send the pre-work invite (template on this page) with the calendar invite; primed rooms start five minutes faster."
       ],
       "dayBefore": [
         "Test the projector with the facilitator link; confirm the notes rail is readable from where you'll stand.",
@@ -53,7 +55,7 @@
       },
       {
         "if": "Learner devices can't join (wifi/filters)",
-        "then": "Run facilitator-only: interactions happen on the projector with volunteers calling choices; private exercises (avoidance slider, BRAVING, the capstone) move to sticky notes. You lose typing, not learning."
+        "then": "Run facilitator-only: interactions happen on the projector with volunteers calling choices; private exercises (avoidance slider, BRAVING, the capstone) move to the printed capstone worksheet or sticky notes. You lose typing, not learning."
       },
       {
         "if": "You're 10+ minutes behind by Radical Candor (Section 06)",
@@ -96,6 +98,16 @@
       {
         "q": "When does this stop being a conversation and become an HR matter?",
         "a": "The toolkit covers performance, behavior, and working-relationship conversations. Policy violations, anything touching protected classes, safety concerns, or formal performance processes belong with HR from the start. When in doubt, consult HR before the conversation, not after it goes wrong."
+      }
+    ],
+    "templates": [
+      {
+        "title": "Pre-work invite (paste into the calendar invite)",
+        "body": "Subject: Before our Difficult Conversations session. We're spending the session on the work conversations we avoid. Before you arrive, think of ONE conversation you've been putting off: a role, not a name, and you will never be asked to share the details. Bring it in your head; every exercise uses it. Nothing you type in the session leaves your screen."
+      },
+      {
+        "title": "7-day pulse (send one week after)",
+        "body": "Subject: One week later, did it happen? Three quick lines, reply whenever: 1) Did you have the conversation you planned? 2) Which tool did you reach for (SBI, STATE, contrast statement)? 3) What happened, in one sentence? Replies come to me only. If it hasn't happened yet, that's useful to know too, and this note is your nudge."
       }
     ]
   },
@@ -352,7 +364,7 @@
     {
       "id": "s-candor",
       "title": "06 · Radical Candor",
-      "minutes": 9,
+      "minutes": 8,
       "purpose": "Give learners the two-axis map for feedback and the self-knowledge of their own failure quadrant under stress.",
       "facilitate": [
         "Teach the grid from the slide: the two axes first, then the failure quadrants by name. Spend your emphasis on Ruinous Empathy; it's the room's most common drift.",
@@ -363,7 +375,7 @@
       ],
       "validate": "3+ of 4 on the sort for most of the room; each learner can name their drift and one counter-move.",
       "watchFor": "Someone proudly claiming Obnoxious Aggression as 'just being honest.' Use the axis language, not judgment: honesty was never the missing axis; care was.",
-      "coreMinutes": 6,
+      "coreMinutes": 5,
       "coreNote": "Core: cut the video and shrink the group activity to the private vote plus one volunteered counter-move.",
       "say": "Kim Scott's grid has two axes: do you care personally, and do you challenge directly. Do both and you get Radical Candor. Care without challenge is Ruinous Empathy, the most common manager failure, where your comfort gets protected and their career pays. Challenge without care is Obnoxious Aggression, technically true and completely unhearable. Neither is Manipulative Insincerity, and that one's poison. Every piece of feedback you've ever given lives somewhere on this grid.",
       "ask": {
@@ -409,20 +421,21 @@
     },
     {
       "id": "s-sideways",
-      "title": "08 · When it goes sideways",
-      "minutes": 5,
-      "purpose": "Pre-load the three recovery moves so a hard reaction doesn't end the conversation or the standard.",
+      "title": "08 · Sideways & listening",
+      "minutes": 6,
+      "purpose": "Pre-load the three recovery moves so a hard reaction doesn't end the conversation, and install the listening turn that follows your ask.",
       "facilitate": [
-        "Walk the three cards: tears (pause, don't retract), anger (contrast statement), silence (ask, then count to six).",
+        "Walk the three reaction cards: tears (pause, don't retract), anger (contrast statement), silence (ask, then count to six).",
         "Demo a contrast statement out loud with real delivery: 'I don't mean you're failing. I do mean these two deadlines slipped and we need a plan.'",
         "Read the permission slip card: pausing a conversation is not losing it.",
-        "Run the quick check, then the pair drill: draft your contrast statement, say it to a partner, ask 'safety or lawyer's disclaimer?'"
+        "Then the listening turn: teach the three moves on the gold card (paraphrase first, one real follow-up, acknowledge before countering).",
+        "Run the quick check, then the pair drill: contrast statement plus the 60-second listen-only rep (paraphrase and one question, no advice)."
       ],
-      "validate": "Quick check correct; each learner has a drafted contrast statement next to their opener.",
-      "watchFor": "Contrast statements that retract the message ('I don't mean it's a big deal...'). The second half must keep the standard, or it's Ruinous Empathy in a new costume.",
-      "coreMinutes": 3,
-      "coreNote": "Core: teach the cards and the check; contrast statement gets drafted inside the capstone instead of the pair drill.",
-      "say": "Your opener can be perfect and still meet tears, anger, or silence. None of those mean you were wrong to raise it. They mean safety dropped, and safety is what you restore first. For tears: pause, acknowledge, don't retract. For anger: the contrast statement, kill the wrong conclusion, keep the real one. For silence: ask your question and count to six in your head. Whoever fills the silence first learns nothing.",
+      "validate": "Quick check correct; each learner has a drafted contrast statement, and the pair drill's listeners stayed inside paraphrase-plus-question.",
+      "watchFor": "Contrast statements that retract the message, and 'listeners' who slide into advice within ten seconds. Name both kindly; they're the two default failures.",
+      "coreMinutes": 4,
+      "coreNote": "Core: teach the cards, the listening card, and the check; the contrast statement gets drafted inside the capstone, and the listen drill becomes the week's homework with their accountability partner.",
+      "say": "Your opener can be perfect and still meet tears, anger, or silence. None of those mean you were wrong to raise it. They mean safety dropped, and safety is what you restore first. And when they finally answer your question, the conversation flips: it's your turn to listen. What you do in that turn, paraphrase, follow up, acknowledge, decides whether they're ever honest with you again.",
       "ask": {
         "q": "Why is 'forget it, it's not a big deal' the worst possible response to someone getting upset?",
         "expect": [
@@ -432,7 +445,7 @@
         ],
         "respond": "All true, and there's a quieter cost: it converts their trust in your word. If this wasn't a big deal, what else have you said that you didn't mean?"
       },
-      "debrief": "A paused conversation resumed is a success. An abandoned one is Ruinous Empathy with extra steps.",
+      "debrief": "A paused conversation resumed is a success, and the listening turn is where trust gets banked for the next one.",
       "transition": "That's the toolkit, all of it. Let's see what stuck."
     },
     {
@@ -504,12 +517,13 @@
       "purpose": "Convert plans into public commitments and close the loop on the session's one next step.",
       "facilitate": [
         "Read the featured card: the one next step is THE conversation, within 7 days.",
+        "Run the fist-to-five (Level 1): 'On a fist to five, how ready do you feel to have your conversation?' Scan and remember the room's number for your session log.",
         "Run the commitment round: who (role) and when, out loud or in the chat. Keep it fast, popcorn style.",
         "Point at the cheat sheet button; suggest printing it and keeping it by the keyboard.",
         "Tell them the 7-day pulse is coming and what it will ask.",
         "Land the last line and stop talking on time."
       ],
-      "validate": "A majority state a who-and-when out loud or in chat. Count them; that number plus the 7-day pulse is your transfer evidence.",
+      "validate": "Fist-to-five mostly 3+ (reaction, Level 1); a majority state a who-and-when out loud or in chat (transfer seed). Count both; with the 7-day pulse they're your evidence chain.",
       "watchFor": "Commitment dodges ('I'll find the right moment'). Gently convert one or two: 'Which day?' A day makes it real; a moment never arrives.",
       "coreMinutes": 3,
       "coreNote": "Core: keep at full length; the commitment round IS the ending.",

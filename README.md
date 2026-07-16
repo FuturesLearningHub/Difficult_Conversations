@@ -34,8 +34,10 @@ python3 -m http.server 8000
 8. When it goes sideways — tears, anger, silence, and the contrast statement
 
 Ends with a scored recap quiz, a **capstone conversation plan** (opener,
-counter-move, recovery line, and a date within 7 days), a flip-card
-glossary, and a public commitment close.
+counter-move, recovery line, listening plan, and a date within 7 days), a
+flip-card glossary, and a public commitment close. A printable
+`worksheet.html` mirrors the capstone for no-device rooms, and
+`cheatsheet.html` is the take-home reference.
 
 ## The interactive tools
 
