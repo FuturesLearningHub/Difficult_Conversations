@@ -40,7 +40,7 @@ design system, same standing principles.
 
 Welcome/QR → Hero (objectives + montage) → Agenda →
 01 Cost of avoiding (avoidance meter) → manifesto →
-02 Three Conversations (labeler + Heen video) →
+02 Three Conversations (labeler + Sinek video) →
 03 SBI (anatomy) → Feedback Lab (graded builder) →
 04 STATE (anatomy + video) → 05 BRAVING (scorecard) →
 06 Radical Candor (quadrant sort + video) → 07 First 30 seconds →
