@@ -32,7 +32,15 @@
   .mins { font-family: 'Antonio', Impact, sans-serif; font-size: 11px; color: #946E24;
     letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
   .sec { border: 1px solid #E4E4E4; border-left: 3px solid #CFAE70; border-radius: 4px;
-    padding: 12px 16px; margin-bottom: 12px; break-inside: avoid; }
+    padding: 12px 16px; margin-bottom: 12px; break-inside: avoid;
+    display: grid; grid-template-columns: 290px 1fr; gap: 16px; align-items: start; }
+  .sec.noimg { grid-template-columns: 1fr; }
+  .sec.noimg .sec__shot { display: none; }
+  .sec__shot { position: sticky; top: 12px; }
+  .sec__shot img { width: 100%; border: 1px solid #E4E4E4; border-radius: 3px; display: block; }
+  .sec__notes { min-width: 0; }
+  @media (max-width: 700px) { .sec { grid-template-columns: 1fr; } .sec__shot { position: static; max-width: 340px; } }
+  @media print { .sec { grid-template-columns: 240px 1fr; } .sec__shot { position: static; } }
   .purpose { font-weight: 600; margin: 2px 0 8px; }
   .tagline { font-family: 'Antonio', Impact, sans-serif; font-weight: 700; text-transform: uppercase;
     letter-spacing: .08em; font-size: 10px; margin: 10px 0 2px; color: #1C1C1C;
@@ -81,6 +89,8 @@
   </div>
 
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-welcome.jpg" alt="Slide: Welcome / QR" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Welcome / QR <span class="mins">Full 3 min · Core 2</span></h2>
     <p class="purpose">Get every learner into the experience on their own device, and set the privacy norm that makes honesty possible.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Welcome. Point your camera at that code before we start. Two ground rules for the next hour: nothing you type leaves your screen, and every example we touch uses roles, never names. That's what makes it safe to work on the real thing.&rdquo;</p>
@@ -91,8 +101,11 @@
     <p class="mini"><b>Watch for:</b> Anyone without a device: pair them with a neighbor now, and point them at the printed cheat sheet for the private exercises.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Everyone in? Then let me tell you what you'll walk out with.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: one scan prompt, state the two norms, move on.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-hero.jpg" alt="Slide: Objectives" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Objectives <span class="mins">Full 2 min · Core 1</span></h2>
     <p class="purpose">Set the contract: five capabilities, ending in a real conversation with a date on it.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Most managers already know WHAT they need to say. Where it falls apart is HOW. In the next hour you get one shared toolkit from the best research there is, and you leave with one real conversation planned and dated. Not a hypothetical. Yours.&rdquo;</p>
@@ -103,8 +116,11 @@
     <p class="mini"><b>Watch for:</b> Eye-rolls at 'another soft-skills training': the objectives are the counter, every one is a concrete behavior.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Here's the road: eight ideas, each one building toward that conversation.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: objectives 1 and 5 out loud; the rest on screen.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-agenda.jpg" alt="Slide: Agenda" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Agenda <span class="mins">Full 1 min · Core skip</span></h2>
     <p class="purpose">Show the arc once so learners can place each tool as it arrives.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Eight ideas, four moves: why these talks are hard, what to actually say, what makes people able to hear it, and how to open, and recover, in the room.&rdquo;</p>
@@ -115,8 +131,11 @@
     <p class="mini"><b>Watch for:</b> Don't teach here. If you're explaining a framework on the agenda slide, you're stealing time from its real slide.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Start with the uncomfortable math of putting it off.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: skip entirely; the deck's structure carries it.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-cost.jpg" alt="Slide: 01 · The cost of avoiding" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>01 · The cost of avoiding <span class="mins">Full 6 min · Core 4</span></h2>
     <p class="purpose">Make avoidance feel expensive instead of safe, and get each learner to privately name their real conversation.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Think of the conversation you're avoiding right now. Here's the uncomfortable part: while you wait, the behavior becomes a pattern, your silence tells them it's fine, and the conversation you eventually have is bigger than the one you skipped. McKinsey's researchers put it bluntly: speaking up isn't a personality trait, it's part of the job.&rdquo;</p>
@@ -127,8 +146,11 @@
     <p class="mini"><b>Watch for:</b> Learners writing nothing because 'mine's too messy.' Reframe: messy is exactly what the toolkit is for; start with the least messy one you've got.</p>
     <p class="mini"><b>Transition:</b> &ldquo;So why do we still avoid them? Because there's more happening in a hard conversation than the topic. Three things, actually.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: skip the slider demo on the projector; straight to their devices, then the written note. The note is non-negotiable.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-belief.jpg" alt="Slide: Manifesto" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Manifesto <span class="mins">Full 1 min · Core skip</span></h2>
     <p class="purpose">One beat of stillness to lock the core idea before the toolkit starts.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;A difficult conversation avoided does not disappear. It compounds.&rdquo;</p>
@@ -139,8 +161,11 @@
     <p class="mini"><b>Watch for:</b> The urge to talk over it. Don't.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Here's the model that explains why they feel so hard.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: skip; say the line yourself as you pass it.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-three.jpg" alt="Slide: 02 · The three conversations" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>02 · The three conversations <span class="mins">Full 10 min · Core 7</span></h2>
     <p class="purpose">Install the session's diagnostic lens: every hard exchange runs a facts, a feelings, and an identity conversation at once.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;The Harvard Negotiation Project studied thousands of hard conversations and found the same three running underneath every one. There's the What Happened conversation, the battle over facts. There's the Feelings conversation, the emotion underneath that leaks into your tone whether you name it or not. And there's the Identity conversation, the one you have with yourself: what does raising this say about me? That third one is usually why the conversation isn't happening.&rdquo;</p>
@@ -151,8 +176,11 @@
     <p class="mini"><b>Watch for:</b> The word 'Identity' getting read as jargon. Translate it every time: it's the 'what does this say about me?' voice.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Now the toolkit turns practical: how do you say the hard content itself? Three letters: SBI.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: cut the video (assign as follow-up) and the pair share; keep the teach and the labeler.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-sbi.jpg" alt="Slide: 03 · SBI feedback" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>03 · SBI feedback <span class="mins">Full 7 min · Core 5</span></h2>
     <p class="purpose">Replace vague accusation with the Situation-Behavior-Impact structure, and install the camera test for behavior.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;'You're always late' starts a fight. Not because it's too honest, but because it's not honest enough: no time, no place, no specifics, just a verdict. The Center for Creative Leadership's fix has three parts. Situation: when and where, so it's a fact, not a pattern-accusation. Behavior: what a camera would have seen. Impact: what it cost, concretely. Watch what happens to the same complaint when it goes through that machine.&rdquo;</p>
@@ -163,8 +191,11 @@
     <p class="mini"><b>Watch for:</b> SBI statements that smuggle the verdict back in ('...and it was really disappointing'). Flag it kindly: impact is a cost, not a grade.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Structure alone isn't enough; you can deliver a perfect SBI and still watch it land like an attack. Let's feel that difference.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: anatomy plus quick check, and the rewrite happens inside the Lab next slide instead of separately.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-lab.jpg" alt="Slide: Feedback Lab" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Feedback Lab <span class="mins">Full 8 min · Core 6</span></h2>
     <p class="purpose">Let learners feel how the reaction changes as each SBI part sharpens; the reaction is the teacher.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Same concern, three ways to say each part. Your job: assemble the feedback and watch how it lands. I'll go first, and I'm going to do it badly on purpose, because you've all heard this version.&rdquo;</p>
@@ -175,8 +206,11 @@
     <p class="mini"><b>Watch for:</b> Option-B-everywhere players getting a mediocre result and shrugging: push them to find WHICH slot is weakest, that's the diagnostic habit.</p>
     <p class="mini"><b>Transition:</b> &ldquo;You now have the content. The next tool is the delivery: how you open your mouth without raising their shields.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: skip your projector demo of the worst run; one sentence of framing, straight to devices.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-state.jpg" alt="Slide: 04 · Opening with STATE" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>04 · Opening with STATE <span class="mins">Full 8 min · Core 4</span></h2>
     <p class="purpose">Give learners a safe-opening pattern (STATE) and one real out-loud rep of their own opener.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;SBI is what you say. STATE is how you say it without raising their shields. Start with facts, because facts are the least controversial thing you own. Then your story, held as a story: 'I'm starting to think,' not 'clearly you.' Then a real question. The magic words are the tentative ones; they're not weakness, they're accuracy. You're sure about the dates; you're guessing about the why.&rdquo;</p>
@@ -187,8 +221,11 @@
     <p class="mini"><b>Watch for:</b> Pairs slipping into discussing the situation instead of practicing the opener. Redirect: 'The content isn't the exercise; the first four sentences are.'</p>
     <p class="mini"><b>Transition:</b> &ldquo;But here's the catch: the best opener in the world lands on deaf ears if the trust account is empty. That's the next stop.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: cut the video; keep the anatomy, the check, and ONE round of the pair rep (one partner speaks, not both) if minutes allow, else assign the mirror version as homework.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-braving.jpg" alt="Slide: 05 · Trust and BRAVING" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>05 · Trust and BRAVING <span class="mins">Full 8 min · Core 4</span></h2>
     <p class="purpose">Shift trust from an abstraction to seven rateable behaviors, and have each learner privately find their growth edge.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Why does the same sentence land fine from one manager and like a knife from another? The difference isn't the sentence; it's the account it's drawn on. Brené Brown's research breaks trust into seven behaviors, small, boring, daily ones. Rate yourself honestly on each; nobody sees your numbers. Your lowest score is probably the reason your hardest conversation feels dangerous.&rdquo;</p>
@@ -199,8 +236,11 @@
     <p class="mini"><b>Watch for:</b> This is where someone may go quiet or emotional; trust inventories touch real relationships. Don't spotlight anyone; the exercise is private by design.</p>
     <p class="mini"><b>Transition:</b> &ldquo;With trust as the ground, here's the map for the feedback itself: two axes, four quadrants, one worth aiming at.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: scorecard only, skip the pair share; assign both videos (Anatomy of Trust, Sinek) as the week's watch list.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-candor.jpg" alt="Slide: 06 · Radical Candor" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>06 · Radical Candor <span class="mins">Full 8 min · Core 5</span></h2>
     <p class="purpose">Give learners the two-axis map for feedback and the self-knowledge of their own failure quadrant under stress.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Kim Scott's grid has two axes: do you care personally, and do you challenge directly. Do both and you get Radical Candor. Care without challenge is Ruinous Empathy, the most common manager failure, where your comfort gets protected and their career pays. Challenge without care is Obnoxious Aggression, technically true and completely unhearable. Neither is Manipulative Insincerity, and that one's poison. Every piece of feedback you've ever given lives somewhere on this grid.&rdquo;</p>
@@ -211,8 +251,11 @@
     <p class="mini"><b>Watch for:</b> Someone proudly claiming Obnoxious Aggression as 'just being honest.' Use the axis language, not judgment: honesty was never the missing axis; care was.</p>
     <p class="mini"><b>Transition:</b> &ldquo;You know the what, the how, and the ground it lands on. Now compress it into the moment that decides everything: the first 30 seconds.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: cut the video and shrink the group activity to the private vote plus one volunteered counter-move.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-open.jpg" alt="Slide: 07 · The first 30 seconds" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>07 · The first 30 seconds <span class="mins">Full 6 min · Core 4</span></h2>
     <p class="purpose">Assemble everything into one rehearsable opener, structured by SHRM's three questions.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;SHRM's field guidance boils the whole conversation down to three questions: where are we now, where are we going, and how do we get there. Answer them before you walk in and you have a spine. Skip them and you have a feelings spiral with no exit. Look at the opener on the card: purpose first, facts second, their view invited before yours hardens. Every framework from today is inside that one paragraph.&rdquo;</p>
@@ -223,8 +266,11 @@
     <p class="mini"><b>Watch for:</b> Perfectionism stalls: learners polishing the opener instead of finishing it. A B-plus opener said out loud beats an A-plus one still in drafts.</p>
     <p class="mini"><b>Transition:</b> &ldquo;One more tool. Because even the perfect opener sometimes meets tears, anger, or dead silence.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: teach the card and the check; the bracket-filling merges into the capstone.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-sideways.jpg" alt="Slide: 08 · Sideways &amp; listening" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>08 · Sideways &amp; listening <span class="mins">Full 6 min · Core 4</span></h2>
     <p class="purpose">Pre-load the three recovery moves so a hard reaction doesn't end the conversation, and install the listening turn that follows your ask.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Your opener can be perfect and still meet tears, anger, or silence. None of those mean you were wrong to raise it. They mean safety dropped, and safety is what you restore first. And when they finally answer your question, the conversation flips: it's your turn to listen. What you do in that turn, paraphrase, follow up, acknowledge, decides whether they're ever honest with you again.&rdquo;</p>
@@ -235,8 +281,11 @@
     <p class="mini"><b>Watch for:</b> Contrast statements that retract the message, and 'listeners' who slide into advice within ten seconds. Name both kindly; they're the two default failures.</p>
     <p class="mini"><b>Transition:</b> &ldquo;That's the toolkit, all of it. Let's see what stuck.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: teach the cards, the listening card, and the check; the contrast statement gets drafted inside the capstone, and the listen drill becomes the week's homework with their accountability partner.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-recap.jpg" alt="Slide: Recap quiz" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Recap quiz <span class="mins">Full 4 min · Core 4</span></h2>
     <p class="purpose">Score the session's knowledge against the objectives before the capstone applies it (Kirkpatrick Level 2).</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Six questions, one per tool. This isn't a grade; it's a check on what's loaded before you build the plan that matters.&rdquo;</p>
@@ -247,8 +296,11 @@
     <p class="mini"><b>Watch for:</b> Racing ahead to finish first. Frame it as a mirror, not a race; wrong answers here are free, wrong answers in the real conversation aren't.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Now the reason we're all here. Everything you've written today converges on one page.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: keep at full length; this is the objectives' evidence.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-plan.jpg" alt="Slide: Capstone · My conversation plan" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Capstone · My conversation plan <span class="mins">Full 8 min · Core 7</span></h2>
     <p class="purpose">Convert the session into one dated, planned, real conversation: the transfer artifact and the Level 3 seed.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;You've carried one conversation through this whole session. Now it gets a plan: your opener, your drift and its counter-move, your recovery line, and a date inside the next seven days. Fill it in honestly, copy it somewhere you'll see tomorrow, and then do the two things that make it real: send the calendar invite, and tell one colleague you're having it.&rdquo;</p>
@@ -259,8 +311,11 @@
     <p class="mini"><b>Watch for:</b> Red flags in circulation: if someone's conversation involves policy violations, harassment, or safety, quietly route them to HR as the first step, not the toolkit.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Two minutes of reference material, and then the only step that matters.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: protect this at full length minus one minute of framing. Never cut the capstone.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-glossary.jpg" alt="Slide: Glossary" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Glossary <span class="mins">Full 1 min · Core skip</span></h2>
     <p class="purpose">Signpost the reference layer; it lives here for after the session.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Every term from today lives here, flip cards, whenever you need the vocabulary back. It'll still be here the night before your conversation.&rdquo;</p>
@@ -271,8 +326,11 @@
     <p class="mini"><b>Watch for:</b> Don't tour all fourteen cards; one flip makes the point.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Last slide. One step left.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: skip; point at it verbally from the closing slide.</p>
+    </div>
   </div>
   <div class="sec">
+    <div class="sec__shot"><img src="img/s-close.jpg" alt="Slide: Closing · commitment" onerror="this.closest('.sec').classList.add('noimg')"></div>
+    <div class="sec__notes">
     <h2>Closing · commitment <span class="mins">Full 3 min · Core 3</span></h2>
     <p class="purpose">Convert plans into public commitments and close the loop on the session's one next step.</p>
     <p class="tagline say">Say</p><p class="script">&ldquo;Here's everything in one sentence: name the real conversation, open with facts, hold your story lightly, keep them safe, and don't let your silence vote for the problem. You have an opener, a recovery line, and a date. The only step left is the one this room can't do for you. Before you go: who, and when? Say it out loud.&rdquo;</p>
@@ -283,6 +341,7 @@
     <p class="mini"><b>Watch for:</b> Commitment dodges ('I'll find the right moment'). Gently convert one or two: 'Which day?' A day makes it real; a moment never arrives.</p>
     <p class="mini"><b>Transition:</b> &ldquo;Go have it. And when it's done, tell the colleague you named how it went. That debrief is where the skill becomes yours.&rdquo;</p>
     <p class="mini core"><b>Core path:</b> Core: keep at full length; the commitment round IS the ending.</p>
+    </div>
   </div>
   <p class="mini" style="margin-top:14px;color:#777">Generated from facilitator/notes.json. The on-screen facilitator edition lives at ./ alongside this guide.</p>
 </div>
