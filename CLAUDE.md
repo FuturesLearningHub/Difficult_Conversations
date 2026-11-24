@@ -1,11 +1,11 @@
 # Navigating Difficult Conversations — Vanderbilt Learning Series
 
 Single-page interactive classroom experience (Learning on Demand). Live at
-https://me5231979.github.io/Difficult_Conversations/ (GitHub Pages, served
+https://futureslearninghub.github.io/Difficult_Conversations/ (GitHub Pages, served
 from the `gh-pages` branch — publish with
 `git branch -f gh-pages main && git push -f origin gh-pages`).
 
-Sister program: AI Basics (me5231979/AI_Classroom) — same engine, same
+Sister program: AI Basics (FuturesLearningHub/AI_Classroom) — same engine, same
 design system, same standing principles.
 
 ## Standing design principles (do not regress these)

@@ -10,7 +10,7 @@ Run after editing index.html or notes.json:
 import json, re, html, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LEARNER_URL = "https://me5231979.github.io/Difficult_Conversations/"
+LEARNER_URL = "https://futureslearninghub.github.io/Difficult_Conversations/"
 
 s = open(os.path.join(ROOT, 'index.html')).read()
 notes = json.load(open(os.path.join(ROOT, 'facilitator', 'notes.json')))
