@@ -8,10 +8,10 @@ self-paced review.
 
 Part of the Vanderbilt Learning Series, in the FLH visual system (black &
 gold, Libre Caslon / Inter / Antonio, one idea per screen), alongside
-[AI Basics](https://me5231979.github.io/AI_Classroom/).
+[AI Basics](https://futureslearninghub.github.io/AI_Classroom/).
 
-- **Learner edition:** https://me5231979.github.io/Difficult_Conversations/
-- **Facilitator edition:** https://me5231979.github.io/Difficult_Conversations/facilitator/
+- **Learner edition:** https://futureslearninghub.github.io/Difficult_Conversations/
+- **Facilitator edition:** https://futureslearninghub.github.io/Difficult_Conversations/facilitator/
 
 ## Running it
 
